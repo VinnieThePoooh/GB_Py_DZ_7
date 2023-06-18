@@ -2,7 +2,6 @@
 
 def create_matrix(colums, rows):
     list_1 = []
-    list_2 = []
     for i in range (1, rows+1):
         for j in range (1, colums+1):
             list_1.append(j*i)
