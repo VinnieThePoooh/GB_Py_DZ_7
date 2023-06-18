@@ -5,9 +5,11 @@ rows = int(input('Введите количество строк:'))
 
 
 def create_little_list(colums, rows):
+    list_1 = []
     list_2 = []
     for i in colums:
-        list_1 = [j*i for j in range (i, rows)]
+        for j in range (i, rows):
+            list_1.append(i*j)
         list_2.append(list_1)
     return list_2
 print(create_little_list(colums,rows))
