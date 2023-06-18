@@ -1,19 +1,17 @@
 # Написать прогу, которая выдает матрицу по заданным параметрам
 
+def create_matrix(colums, rows):
+    list_1 = []
+    list_2 = []
+    for i in range (1, rows+1):
+        for j in range (1, colums+1):
+            list_1.append(j*i)
+        print(*list_1)
+        list_1 = []
+   
+
 colums = int(input('Введите количество столбцов:'))
 rows = int(input('Введите количество строк:'))
 
-
-def create_little_list(colums, rows):
-    list_1 = []
-    list_2 = []
-    for i in colums:
-        for j in range (i, rows):
-            list_1.append(i*j)
-        list_2.append(list_1)
-    return list_2
-print(create_little_list(colums,rows))
-
+print(create_matrix(colums,rows))
       
-# list_2 = list(map(create_little_list(colums, rows),list_2))
-# print (list_2)
